@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url("./assets/custom-font/css/satoshi.css");
 
 @layer base {
@@ -25,8 +24,29 @@ body {
 }
 
 .custom-inputCover {
-  @apply border border-fine-green p-3 rounded-[40px] my-2
+  @apply border border-fine-green p-3 rounded-[40px] my-2;
 }
 .custom-btn {
-  @apply bg-fine-green rounded-[40px] p-3  w-full cursor-pointer
+  @apply bg-fine-green rounded-[40px] p-3  w-full cursor-pointer;
+}
+
+/* For WebKit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 3px; /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #086d37; /* Thumb color */
+}
+
+/* For Firefox */
+/* Note: Custom styling of scrollbars is not supported in Firefox, 
+       but you can style the overlay scrollbars */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #086d37 #fff;
 }
