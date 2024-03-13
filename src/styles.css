@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("./assets/custom-font/css/satoshi.css");
+
+@layer base {
+  @font-face {
+    font-family: "Satoshi-Variable", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/custom-font/css/satoshi.css") format("woff2");
+  }
+}
+body {
+  font-family: "Satoshi-Variable", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.satoshi-font {
+  font-family: "Satoshi-Variable", sans-serif;
+}
+
+.custom-inputCover {
+  @apply border border-fine-green p-3 rounded-[40px] my-2
+}
+.custom-btn {
+  @apply bg-fine-green rounded-[40px] p-3  w-full cursor-pointer
+}

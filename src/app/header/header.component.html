@@ -1,0 +1,40 @@
+<div class="container mx-auto my-8">
+  <div class="flex justify-between items-center">
+    <div>
+      <img
+        src="/assets/icons/eilera.svg"
+        width="250px"
+        height="60px"
+        alt=""
+      />
+    </div>
+    <div>
+      <ul class="flex gap-10">
+        <li
+          style="list-style: none"
+          class="cursor-pointer"
+          *ngFor="let item of navItems"
+        >
+          <a
+            class="text-base fw-medium"
+            style="text-decoration: none"
+            [href]="item.path"
+          >
+            {{ item.label }}</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="min-w-36">
+      <button class="bg-fine-green flex gap-2 justify-center rounded-4xl font-medium p-3 text-white w-full">
+        Download
+        <img
+          src="/assets/icons/download.svg"
+          width="20px"
+          height="18px"
+          alt=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
