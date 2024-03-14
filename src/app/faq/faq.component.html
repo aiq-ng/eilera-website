@@ -1,0 +1,53 @@
+<div class="relative">
+  <div class="absolute left-0 top-0 w-52">
+    <img
+      src="/assets/images/photoroom-down.webp"
+      class="ml-auto"
+      width="100%"
+      height="auto"
+      alt=""
+    />
+  </div>
+  <div class="absolute left-0 bottom-0 w-48">
+    <img
+      src="/assets/images/flower.webp"
+      class="ml-auto"
+      width="100%"
+      height="auto"
+      alt=""
+    />
+  </div>
+  <div class="absolute right-0 bottom-0 w-48">
+    <img
+      src="/assets/images/calathea.webp"
+      class="ml-auto"
+      width="100%"
+      height="auto"
+      alt=""
+    />
+  </div>
+  <div class="container mx-auto py-20">
+    <h3 class="text-5xl leading-[59px] font-black text-black text-center">
+      Frequently Asked Questions
+    </h3>
+
+    <div class="w-4/5 mx-auto">
+      <div
+        *ngFor="let item of faqItems; let i = index"
+        class="p-8 bg-[#1CB3741A] my-8 rounded-[20px] cursor-pointer"
+        (click)="toggleContent(i)"
+      >
+        <div class="flex justify-between">
+          <h4 class="text-2xl font-black text-black">{{ item.question }}</h4>
+          <img  *ngIf="i !== openItemId" src="/assets/icons/down.svg" width="35" height="35" />
+          <img *ngIf="i === openItemId" src="/assets/icons/up.svg" width="35" height="35" />
+        </div>
+        <div class="">
+          <div *ngIf="i === openItemId" class="">
+            <p class="text-base font-normal my-2">{{ item.answer }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="image-container">
+  <div class="absolute left-0 w-60 -top-36">
+    <img
+      src="/assets/images/photoroomTwo.webp"
+      class="ml-auto"
+      width="100%"
+      height="auto"
+      alt=""
+    />
+  </div>
+  <div class="gradient-overlay">
+    <div class="container mx-auto pb-4">
+      <div class="ml-auto w-4/5 flex justify-between">
+        <div class="flex w-3/4 items-start gap-3">
+          <img
+            src="/assets/icons/smile.svg"
+            class="mt-6"
+            alt=""
+            width="50"
+            height="50"
+          />
+          <h2 class="font-medium text-6xl leading-[70px]">
+            Stay informed with our latest news and updates.
+          </h2>
+        </div>
+        <div class="mt-auto flex items-center gap-2 h-10 w-52 cursor-pointer">
+          <p class="border rounded-3xl p-1 text-base font-medium border-black">
+            READ THE JOURNAL
+          </p>
+          <img src="/assets/icons/Arrow.svg" alt="" width="25" height="25" />
+        </div>
+      </div>
+      <div class="w-full flex justify-between mt-10">
+        <div *ngFor="let post of blogPosts; let i = index" class="w-1/3 flex">
+          <div class="mx-2">
+            <img
+              [src]="post.image"
+              width="100%"
+              height="auto"
+              alt="Blog Image"
+            />
+            <div class="flex items-end my-3">
+              <p class="w-3/4 text-xl font-medium text-[#2C2C2C]">
+                {{ post.text }}
+              </p>
+              <img
+                src="/assets/icons/Arrow.svg"
+                alt=""
+                width="25"
+                height="25"
+              />
+            </div>
+            <div class="w-3/5 ml-auto mb-8">
+              <p class="text-[#393939] text-sm font-normal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div
+            *ngIf="i !== blogPosts.length - 1"
+            class="bg-[#1c1c1c42] mx-2 w-[0.19px] h-full"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

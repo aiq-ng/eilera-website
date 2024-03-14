@@ -1,0 +1,22 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    background: #1CB374;
+    border-radius: 40px;
+    z-index: 1;
+    padding-top: 5rem;
+    min-height: 600px;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+   
+    background-image: url("/assets/icons/Pattern.svg");
+    background-size: cover;
+    background-position: center;
+  }

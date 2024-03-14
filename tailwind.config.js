@@ -34,9 +34,11 @@ module.exports = {
       "fine-green": "#1CB374",
       "light-green": "#D9FFDF",
       white: "#FFFFFF",
-      grey: "#333333",
+      black: "#000",
+      "grey-one": "#333333",
       "light-grey": "#00000066",
       "medium-grey": "#00000099",
+      "grey-two": "#4F4F4F",
     },
     fontFamily: {
       display: ['"Satoshi-Variable"'],

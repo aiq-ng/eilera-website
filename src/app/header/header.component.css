@@ -6,3 +6,9 @@
   border: 1px solid #1CB374;
   border-radius: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav-control {
+    display: none;
+  }
+}

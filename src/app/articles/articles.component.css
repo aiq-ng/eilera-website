@@ -1,0 +1,18 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  padding-top: 5rem;
+  min-height: 800px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/icons/article-pattern.svg");
+  background-size: cover;
+  
+}
