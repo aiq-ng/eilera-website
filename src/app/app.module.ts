@@ -17,12 +17,10 @@ import { FooterComponent } from './footer/footer.component';
     ContentsComponent,
     ArticlesComponent,
     FaqComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

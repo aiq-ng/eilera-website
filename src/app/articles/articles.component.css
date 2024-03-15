@@ -3,7 +3,7 @@
   width: 100%;
   background: #ffffff;
   padding-top: 5rem;
-  min-height: 800px;
+  height: 800px;
 }
 
 .gradient-overlay {
@@ -14,5 +14,12 @@
   height: 100%;
   background-image: url("/assets/icons/article-pattern.svg");
   background-size: cover;
-  
+}
+
+
+@media only screen and (max-width: 768px) {
+.articles {
+  height: 500px;
+  overflow-y: auto;
+}
 }

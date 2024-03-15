@@ -1,28 +1,28 @@
 <div class="relative pt-20 pb-10">
   <div
-    class="bg-[url(/assets/icons/Shape.svg)] bg-no-repeat bg-cover bg-center w-full h-60 absolute"
+    class="bg-[url(/assets/icons/Shape.svg)] bg-no-repeat bg-cover bg-center w-full h-40 lg:h-60 absolute"
   ></div>
-  <div class="container mt-32 mx-auto relative z-10">
+  <div class="container mt-20 lg:mt-32 mx-auto relative z-[1]">
     <div
-      class="w-4/5 mx-auto bg-fine-green p-16 flex gap-7 items-center justify-around rounded-xl shadow-xl"
+      class="w-full lg:w-11/12 mx-auto bg-fine-green p-4 lg:p-16 flex flex-col lg:flex-row gap-7 items-start lg:items-center justify-around rounded-xl shadow-xl"
     >
-      <h4 class="font-normal text-3xl text-white">
+      <h4 class="font-normal text-2xl lg:text-3xl text-white">
         Subscribe to Our Newsletters
       </h4>
-      <div class="bg-white rounded py-2 px-4">
+      <div class="bg-white w-full lg:w-1/2 justify-between rounded flex items-center py-1 lg:py-2 px-1 lg:px-4">
         <input
           type="email"
           placeholder="Enter your email"
-          class="h-12 bg-white text-lg font-normal outline-none"
+          class="h-12 w-3/4 bg-white text-lg font-normal outline-none"
         />
-        <button class="bg-fine-green rounded-3xl text-white p-4">
-          Subscribe Now
+        <button class="bg-fine-green rounded-xl text-white p-2 lg:p-4">
+          Subscribe
         </button>
       </div>
     </div>
-    <div class="flex items-center justify-between mt-20 mb-10">
-      <div>
-        <div class="w-48 md:w-56 my-3">
+    <div class="flex flex-col flex-wrap md:flex-row items-center justify-between  mt-20 mb-10">
+      <div class="my-4 ">
+        <div class="w-48 mx-auto md:mx-0 md:w-56 my-3">
           <img
             src="/assets/images/icon.png"
             width="100%"
@@ -30,11 +30,11 @@
             alt=""
           />
         </div>
-        <p class="font-normal text-base text-grey-two mb-6">
+        <p class="font-normal text-center md:text-left text-base text-grey-two mb-6">
           Download the app by clicking the link below :
         </p>
         <button
-          class="bg-fine-green flex gap-2 justify-center rounded-4xl font-medium p-3 text-white w-40"
+          class="bg-fine-green mx-auto md:mx-0 flex gap-2 justify-center rounded-4xl font-medium p-3 text-white w-40"
         >
           Download
           <img
@@ -45,14 +45,14 @@
           />
         </button>
       </div>
-      <div class="flex items-center justify-around gap-14">
+      <div class="flex items-center justify-around my-4 gap-5">
         <p class="font-medium text-base text-grey-two">About us</p>
         <p class="font-medium text-base text-grey-two">Discover</p>
         <p class="font-medium text-base text-grey-two">Explore</p>
         <p class="font-medium text-base text-grey-two">Blog</p>
       </div>
-      <div>
-        <h4 class="font-medium text-xl text-grey-two">Social</h4>
+      <div class="my-4">
+        <h4 class="font text-center md:text-left -medium text-xl text-grey-two">Social</h4>
         <div class="flex gap-6 mt-8">
           <img
             src="/assets/icons/facebookIcon.png"
@@ -76,11 +76,11 @@
       </div>
     </div>
     <div class="bg-[#00000031] w-full h-[1px]"></div>
-    <div class="flex justify-between mt-10">
+    <div class="flex flex-col md:flex-row text-center md:text-left justify-between mt-10">
       <p class="font-normal text-base text-grey-two">
         © 2024 Morawo Analytics Data. All rights reserved.
       </p>
-      <div class="flex gap-8">
+      <div class="flex justify-center md:justify-start gap-8 my-4 md:my-0">
         <p class="font-medium text-base text-grey-two">Terms of Service</p>
         <p class="font-medium text-base text-grey-two">Privacy Policy</p>
       </div>

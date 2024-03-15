@@ -7,7 +7,7 @@
   border-radius: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .nav-control {
     display: none;
   }

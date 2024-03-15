@@ -2,10 +2,10 @@
   <div
     class="my-10 container mx-auto flex flex-col md:flex-row items-center justify-between py-2"
   >
-    <div class="w-2/5">
+    <div class="hidden md:block w-2/5">
       <img src="/assets/images/homeImg.webp" width="" height="" alt="" />
     </div>
-    <div class="w-1/2">
+    <div class="w-full px-4 md:px-0 md:w-1/2">
       <h4 class="text-3xl font-bold text-grey-one my-2 leading-9">
         Here's what Eilera offers
       </h4>
@@ -37,7 +37,7 @@
       </li>
     </div>
   </div>
-  <div class="absolute right-0 -bottom-36">
+  <div class="absolute right-0 -bottom-20 lg:-bottom-36 w-36 lg:w-60">
     <img
       src="/assets/images/photoroom.webp"
       class="ml-auto"
@@ -52,9 +52,9 @@
   <div class="image-container">
     <div class="gradient-overlay">
       <div
-        class="flex flex-col md:flex-row justify-between items-center h-full py-8 px-12"
+        class="flex flex-col md:flex-row justify-center md:justify-between items-center h-full py-8 px-8 md:px-12"
       >
-        <div class="w-full ml-0 md:w-2/5 md:ml-6">
+        <div class="w-full ml-0 text-center md:text-left md:w-2/5 md:ml-6">
           <h3 class="text-4xl font-bold my-4 leading-[55px] text-white">
             Ready to unlock the full potential of your farm?
           </h3>
@@ -63,7 +63,7 @@
           </p>
 
           <button
-            class="bg-white flex gap-2 justify-center rounded-4xl font-medium p-3 text-fine-green w-40"
+            class="bg-white mx-auto md:mx-0 flex gap-2 justify-center rounded-4xl font-medium p-3 text-fine-green w-40"
           >
             Download
             <img
@@ -74,7 +74,7 @@
             />
           </button>
         </div>
-        <div class="w-1/2 mr-6">
+        <div class="hidden md:block w-1/2 mr-6">
           <img
             src="/assets/images/contentImg.webp"
             alt=""

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   margin: 5rem 0;
-  height: 80vh; /* Set your desired height */
+  height: 90vh; 
   background-image: url("/assets/images/bgImage.webp");
   background-size: cover;
   background-position: center;
@@ -23,13 +23,18 @@
     rgba(28, 179, 116, 0.5) 100.66%
   );
 }
+.active-state {
+  background-color: #1CB374; /* Example background color */
+  color: #ffffff; /* Example text color */
+}
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1024px) {
   .image-container {
     border-radius: 20px;
-    height: 100vh;
+    margin: 3rem 0;
   }
   .gradient-overlay {
-    border-radius: 20px
+    border-radius: 20px;
+    
   }
 }
