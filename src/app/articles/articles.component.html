@@ -24,7 +24,7 @@
             height="50"
           />
           <h2
-            class="font-medium text-4xl md:text-6xl leading-[50px] lg:leading-[70px]"
+            class="font-medium text-3xl md:text-6xl leading-[50px] lg:leading-[70px]"
           >
             Stay informed with our latest news and updates.
           </h2>
@@ -32,7 +32,7 @@
         <div
           class="mt-auto ml-0 md:ml-12 lg:ml-1 flex items-center gap-2 h-10 w-52 cursor-pointer"
         >
-          <p class="border rounded-3xl p-1 text-base font-medium border-black">
+          <p class="border rounded-3xl p-1 text-sm md:text-base font-medium border-black">
             READ THE JOURNAL
           </p>
           <img src="/assets/icons/Arrow.svg" alt="" width="25" height="25" />
@@ -50,12 +50,12 @@
             <img
               [src]="post.image"
               width="100%"
-              class="w-4/5 lg:w-full"
+              class="w-11/12 lg:w-full"
               height="auto"
               alt="Blog Image"
             />
             <div class="flex items-end my-3">
-              <p class="w-3/4 text-xl font-medium text-[#2C2C2C]">
+              <p class="w-5/6 text-xl font-medium text-[#2C2C2C]">
                 {{ post.text }}
               </p>
               <img
@@ -65,7 +65,7 @@
                 height="25"
               />
             </div>
-            <div class="w-3/5 ml-auto mb-8">
+            <div class="w-full lg:w-3/5 ml-auto mb-8">
               <p class="text-[#393939] text-sm font-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>

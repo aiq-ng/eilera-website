@@ -7,6 +7,46 @@
   border-radius: 50px;
 }
 
+
+
+/* Side Bar Navigation */
+.sideNav-container {
+  right: 0;
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  z-index: 300;
+}
+
+/* Backdrop */
+.backdrop {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sideNav-style li:hover {
+  background-color: #1cb374c0;
+}
+.sideNav-style li:hover a {
+  color: #f9f9f9;
+}
+/* .sideNav-style li.active {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  color: #f9f9f9;
+} */
+.nav-menu {
+  display: none;
+}
+
+.sideNav-style .link-styles { 
+  display: block;
+  width: 100%;
+}
+
 @media only screen and (max-width: 1023px) {
   .nav-control {
     display: none;

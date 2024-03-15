@@ -1,5 +1,5 @@
 <div class="fixed w-full h-20 lg:h-24 z-10 top-0 bg-white">
-  <div class="container mx-auto py-4 lg:py-6 section-head ">
+  <div class="container mx-auto py-4 lg:py-6 section-head">
     <div class="flex justify-between items-center">
       <div class="w-48 lg:w-56">
         <img src="/assets/images/icon.png" width="100%" height="40px" alt="" />
@@ -12,7 +12,7 @@
             *ngFor="let item of navItems"
           >
             <a
-              class="text-base font-medium text-grey-one"
+              class="text-base font-medium text-grey-one hover:text-[#1cb374c0]"
               style="text-decoration: none"
               [href]="item.path"
             >
@@ -33,6 +33,47 @@
             alt=""
           />
         </button>
+      </div>
+      <div class="block lg:hidden text-fine-green" *ngIf="showList" (click)="onShowList()">
+        <img src="assets/icons/menu_close.svg" alt="menu" width="30px" />
+      </div>
+      <div class="block lg:hidden text-fine-green" *ngIf="!showList" (click)="onShowList()">
+        <img src="assets/icons/menu-fill.svg" class="text-fine-green" width="30px" alt="menu" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SMALL SCREEN -->
+<div *ngIf="showList">
+  <div class="sideNav-container">
+    <div class="backdrop" (click)="onShowList()">
+      <div class="sideNav-style h-screen w-11/12 md:w-3/5 bg-[#f5f5f5]">
+        <li
+          style="list-style: none"
+          class="cursor-pointer m-4 p-3 bg-light-green rounded-md"
+          *ngFor="let item of navItems"
+        >
+          <a
+            class="text-base font-medium text-grey-one"
+            style="text-decoration: none"
+            [href]="item.path"
+          >
+            {{ item.label }}</a
+          >
+        </li>
+        <div class="bg-[#00000031] my-6 w-full h-[1px]"></div>
+        <button
+        class="bg-fine-green w-3/4 mx-auto  flex gap-2 justify-center rounded-4xl font-medium p-3 text-white "
+      >
+        Download
+        <img
+          src="/assets/icons/download.svg"
+          width="20px"
+          height="18px"
+          alt=""
+        />
+      </button>
       </div>
     </div>
   </div>

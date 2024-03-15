@@ -7,11 +7,12 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
 })
 export class HeaderComponent {
   constructor(private renderer: Renderer2) {}
+  showList: boolean = false;
   navItems = [
-    { path: '#privacy', label: 'Privacy' },
-    { path: '#help', label: 'Help Center' },
     { path: '#blog', label: 'Blog' },
     { path: '#features', label: 'Features' },
+    { path: '#privacy', label: 'Privacy' },
+    { path: '#help', label: 'Help Center' },
   ];
 
   @HostListener('window:scroll', [])
@@ -27,4 +28,11 @@ export class HeaderComponent {
       this.renderer.removeClass(navControl, 'scrolled');
     }
   }
+  onShowList = () => {
+    this.showList = !this.showList;
+  };
+
+  closeShowList = () => {
+    this.showList = false;
+  };
 }
