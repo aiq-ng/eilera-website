@@ -2,12 +2,11 @@
   position: relative;
   width: 100%;
   margin: 5rem 0;
-  height: 90vh; 
+  height: 70vh; 
   background-image: url("/assets/images/bgImage.webp");
   background-size: cover;
   background-position: center;
   border-radius: 40px;
-  
 }
 
 .gradient-overlay {
@@ -32,6 +31,7 @@
   .image-container {
     border-radius: 20px;
     margin: 3rem 0;
+    height: 80vh;
   }
   .gradient-overlay {
     border-radius: 20px;
