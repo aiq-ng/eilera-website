@@ -6,7 +6,7 @@ import { ServerRequestService } from './service/server-request.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'eilera-website';
+  title = 'eilera-agro';
   openModal = true;
 
   constructor(private serverRequestService: ServerRequestService) {}
