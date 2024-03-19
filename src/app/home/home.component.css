@@ -1,7 +1,7 @@
 .image-container {
   position: relative;
   width: 100%;
-  margin: 5rem 0;
+  margin: 7rem 0 5rem 0;
   height: 70vh; 
   background-image: url("/assets/images/bgImage.webp");
   background-size: cover;
@@ -30,7 +30,7 @@
 @media only screen and (max-width: 1024px) {
   .image-container {
     border-radius: 20px;
-    margin: 3rem 0;
+    margin: 5rem 0 4rem 0;
     height: 80vh;
   }
   .gradient-overlay {

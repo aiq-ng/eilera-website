@@ -10,11 +10,15 @@ import { NgForm } from '@angular/forms';
 export class DownloadModalComponent {
   name: string = '';
   email: string = '';
+  error: boolean = false;
   submitted: boolean = false;
+  loading: boolean = false;
   response: boolean = false;
   constructor(private serverRequestService: ServerRequestService) {}
 
   onSubmit(form: NgForm): void {
+    this.error = false;
+    this.loading = true;
     if (form.valid) {
       // Form is valid, proceed with submission
       const _userDetails = {
@@ -25,15 +29,19 @@ export class DownloadModalComponent {
       this.serverRequestService.registerUser(_userDetails).subscribe({
         next: () => {
           console.log('User registration Successfully');
+          this.loading = false;
           this.response = true;
         },
         error: (err: any) => {
           console.error('Form Submition failed', err);
+          this.error = true;
+          this.loading = false;
         },
       });
     } else {
       // Form is invalid, display error messages
-      console.log('Form submission failed. Please correct errors.');
+      this.error = false;
+      this.loading = false;
     }
     this.submitted = true;
   }

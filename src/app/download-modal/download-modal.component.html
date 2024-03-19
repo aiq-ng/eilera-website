@@ -4,7 +4,7 @@
   <div
     class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-md p-4"
   >
-    <div *ngIf="!response" class="p-6 pt-0 text-center">
+    <div *ngIf="!response" class="p-4 lg:p-6 pt-0 text-center">
       <h3 class="text-lg font-medium text-grey-two mt-5 mb-6">
         To ensure you're among the first to know when our application goes live,
         please take a moment to fill out the form below:
@@ -12,7 +12,7 @@
       <form
         #myForm="ngForm"
         (ngSubmit)="onSubmit(myForm)"
-        class="w-4/5 mx-auto"
+        class="w-full lg:w-4/5 mx-auto"
       >
         <div>
           <label class="block text-start text-grey-two font-medium" for="name"
@@ -53,21 +53,31 @@
             Email is required and must be valid (e.g., example@example.com).
           </div>
         </div>
+       
         <div class="flex justify-around gap-2 my-4">
           <button
-            class="bg-fine-green flex items-center gap-2 w-2/5 rounded-2xl font-medium p-3 text-white"
+            class="bg-fine-green flex items-center justify-center gap-2 w-1/2 rounded-2xl font-medium p-3 text-white"
             type="submit"
           >
             Submit
             <img src="/assets/icons/send.svg" alt="" width="18" height="16" />
           </button>
           <button
-            class="border border-[rgba(255,0,0,0.82)] w-2/5 rounded-2xl font-medium p-3 text-[red]"
+            class="border border-[rgba(255,0,0,0.82)] w-1/2 rounded-2xl font-medium p-3 text-[red]"
             type="button"
             (click)="handleClose()"
           >
             Close
           </button>
+        </div>
+        <div *ngIf="loading" class="flex justify-center mx-auto">
+          <div class="lds-ripple">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div *ngIf="error" class="text-center text-sm text-[rgba(255,0,0,0.82)] font-medium">
+          An Error Occurred, please try again later.
         </div>
       </form>
     </div>

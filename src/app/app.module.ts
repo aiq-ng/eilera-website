@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DownloadModalComponent } from './download-modal/download-modal.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { EileraContentComponent } from './component/eilera-content/eilera-content.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     FaqComponent,
     FooterComponent,
     DownloadModalComponent,
+    EileraContentComponent,
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [],

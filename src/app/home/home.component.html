@@ -78,35 +78,6 @@
         {{ content.text }}
       </button>
     </div>
-    <div
-      class="flex flex-col md:flex-row items-center justify-between my-8 py-8"
-    >
-      <div class="hidden md:block w-2/5">
-        <img
-          src="/assets/images/imgOne.webp"
-          width="100%"
-          height="auto"
-          alt=""
-        />
-      </div>
-      <div class="w-full px-4 md:px-0 md:w-1/2">
-        <h4 class="text-3xl font-bold text-grey-one my-2 leading-9">Farmers</h4>
-
-        <li class="font-normal text-xl text-grey-two leading-10">
-          <span class="font-bold">Optimize Yields:</span> Make data-driven
-          decisions to maximize your harvest potential with personalized
-          recommendations.
-        </li>
-        <li class="font-normal text-xl text-grey-two leading-10">
-          <span class="font-bold"> Reduce Costs:</span> Manage resources
-          efficiently with smart irrigation, fertilization, and pest control
-          strategies.
-        </li>
-        <li class="font-normal text-xl text-grey-two leading-10">
-          <span class="font-bold">Simplify Management:</span> Gain a holistic
-          view of your farm's performance from a single platform.
-        </li>
-      </div>
-    </div>
+    <app-eilera-content [value]="view"></app-eilera-content>
   </div>
 </div>
