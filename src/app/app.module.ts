@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,6 +9,8 @@ import { ContentsComponent } from './contents/contents.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
+import { DownloadModalComponent } from './download-modal/download-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     ArticlesComponent,
     FaqComponent,
     FooterComponent,
+    DownloadModalComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

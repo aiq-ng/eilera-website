@@ -5,7 +5,9 @@
         class="flex flex-col lg:flex-row justify-center lg:justify-between items-center h-full p-4 lg:p-0"
       >
         <div class="w-full text-center lg:text-left lg:w-2/5 ml-0 lg:ml-12">
-          <h3 class="text-4xl font-bold my-4 leading-[48px] lg:leading-[55px] text-white">
+          <h3
+            class="text-4xl font-bold my-4 leading-[48px] lg:leading-[55px] text-white"
+          >
             Data-Driven Decisions, Optimized Yields.
           </h3>
           <p
@@ -17,6 +19,7 @@
           </p>
 
           <button
+            (click)="handleOpenModal()"
             class="bg-white mx-auto lg:mx-0 flex gap-2 justify-center rounded-4xl font-medium p-2 lg:p-3 text-fine-green w-40"
           >
             Download
@@ -42,7 +45,7 @@
 </div>
 
 <div class="relative">
-  <div class="absolute right-0 -top-16 w-24  md:w-40 lg:w-60">
+  <div class="absolute right-0 -top-16 w-24 md:w-40 lg:w-60">
     <img
       src="/assets/images/calathea.webp"
       class="ml-auto"
@@ -86,7 +89,7 @@
           alt=""
         />
       </div>
-      <div class=" w-full px-4 md:px-0 md:w-1/2">
+      <div class="w-full px-4 md:px-0 md:w-1/2">
         <h4 class="text-3xl font-bold text-grey-one my-2 leading-9">Farmers</h4>
 
         <li class="font-normal text-xl text-grey-two leading-10">

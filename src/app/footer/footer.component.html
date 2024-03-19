@@ -15,7 +15,7 @@
           placeholder="Enter your email"
           class="h-12 w-3/4 bg-white text-lg font-normal outline-none"
         />
-        <button class="bg-fine-green rounded-xl text-white p-2 lg:p-4">
+        <button class="bg-fine-green rounded-lg text-white p-2 lg:p-4">
           Subscribe
         </button>
       </div>
@@ -33,7 +33,7 @@
         <p class="font-normal text-center md:text-left text-base text-grey-two mb-6">
           Download the app by clicking the link below :
         </p>
-        <button
+        <button (click)="handleOpenModal()"
           class="bg-fine-green mx-auto md:mx-0 flex gap-2 justify-center rounded-4xl font-medium p-3 text-white w-40"
         >
           Download

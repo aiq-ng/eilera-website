@@ -1,12 +1,12 @@
 import { Component, HostListener, Renderer2 } from '@angular/core';
-
+import { ServerRequestService } from '../service/server-request.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private serverRequestService: ServerRequestService) {}
   showList: boolean = false;
   navItems = [
     { path: '#blog', label: 'Blog' },
@@ -35,4 +35,8 @@ export class HeaderComponent {
   closeShowList = () => {
     this.showList = false;
   };
+ 
+  handleOpenModal = () => {
+    this.serverRequestService.toggleOpenModal();
+  }
 }
